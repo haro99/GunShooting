@@ -10,8 +10,8 @@ public enum Action {
 
 public class ShootingController : MonoBehaviour
 {
-    RectTransform canvasRect;
-    public GameObject site;
+    public RectTransform canvasRect;
+    public GameObject site, Gameover;
     public Camera camera;
     public AudioSource audioSource;
     public float hp;
@@ -26,7 +26,7 @@ public class ShootingController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        canvasRect = GameObject.Find("Canvas").GetComponent<RectTransform>();
+        //canvasRect = GameObject.Find("Canvas").GetComponent<RectTransform>();
         playeranimtor = GetComponent<Animator>();
         hp = 100;
     }
